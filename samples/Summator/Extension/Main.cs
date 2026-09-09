@@ -1,7 +1,13 @@
+// ./build.cmd --productBuild --pushNupkgsLocal ~/MyLocalNuGetSource /p:GenerateGodotBindings=true --warnAsError false
+// cd samples/Summator
+// dotnet publish Extension -c Debug -r win-x64 -o Game/lib/windows --self-contained true
+
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Godot;
 using Godot.Bridge;
+using FixMath.NET;
+using OtherThings;
 
 [assembly: DisableGodotEntryPointGeneration]
 [assembly: DisableRuntimeMarshalling]
@@ -18,6 +24,8 @@ public class Main
         }
 
         GodotRegistry.RegisterClass<Summator>(Summator.BindMembers);
+        GodotRegistry.RegisterClass<FixedSharp>(FixedSharp.BindMembers);
+        GodotRegistry.RegisterClass<DummyNode>(DummyNode.BindMembers);
     }
 
     public static void DeinitializeSummatorTypes(InitializationLevel level)

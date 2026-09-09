@@ -5,10 +5,6 @@
     <PublishAot>true</PublishAot>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <ExcludeFromProductBuild>true</ExcludeFromProductBuild>
-  </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="$(RepoRoot)src\Godot.Bindings\Godot.Bindings.csproj" />
     <ProjectReference Include="$(RepoRoot)src\Godot.SourceGeneration\Godot.SourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />

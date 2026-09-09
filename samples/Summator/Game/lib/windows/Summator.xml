@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Summator</name>
+    </assembly>
+    <members>
+        <member name="T:GDExtensionSummator.Summator">
+            <summary>
+            It sums
+            </summary>
+        </member>
+        <member name="M:GDExtensionSummator.Summator.Add(System.Int32)">
+            <summary>
+            Adds stuff
+            </summary>
+            <param name="value">value to add</param>
+        </member>
+        <member name="M:GDExtensionSummator.Summator.Reset">
+            <summary>
+            Resets
+            </summary>
+        </member>
+        <member name="M:GDExtensionSummator.Summator.GetTotal">
+            <summary>
+            Get values or som
+            </summary>
+            <returns>Count</returns>
+        </member>
+        <member name="M:GDExtensionSummator.Summator.Dummy">
+            <summary>
+            Dummy
+            </summary>
+            <returns>3</returns>
+        </member>
+        <member name="T:OtherThings.DummyNode">
+            <summary>
+            A test node
+            </summary>
+        </member>
+        <member name="F:OtherThings.DummyNode.value">
+            <summary>
+            Main value
+            </summary>
+        </member>
+        <member name="M:OtherThings.DummyNode.SetValue(System.Double)">
+            <summary>
+            Sets the valye
+            </summary>
+            <param name="newValue">value to set</param>
+        </member>
+        <member name="M:OtherThings.DummyNode.GetValue">
+            <summary>
+            Gets the value
+            </summary>
+            <returns>value</returns>
+        </member>
+        <member name="M:OtherThings.DummyNode.ModifyThis">
+            <summary>
+            test virtual method
+            </summary>
+        </member>
+        <member name="T:OtherThings.FixedSharp">
+            <summary>
+            Idk anymore man...
+            </summary>
+        </member>
+        <member name="M:OtherThings.FixedSharp.SetRawValue(System.Int64)">
+            <summary>
+            Sets the raw valye
+            </summary>
+            <param name="newValue">value to set</param>
+        </member>
+        <member name="M:OtherThings.FixedSharp.GetRawValue">
+            <summary>
+            Gets the raw value
+            </summary>
+            <returns>value</returns>
+        </member>
+        <member name="T:FixMath.NET.Fix64">
+            <summary>
+            Represents a Q31.32 fixed-point number.
+            </summary>
+        </member>
+        <member name="F:FixMath.NET.Fix64.Epsilon">
+            <summary>
+            Low-precision error margin
+            </summary>
+        </member>
+        <member name="F:FixMath.NET.Fix64.EpsilonPlus">
+            <summary>
+            High-precision error margin
+            </summary>
+        </member>
+        <member name="F:FixMath.NET.Fix64.Pi">
+            <summary>
+            The value of Pi
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Sign(FixMath.NET.Fix64)">
+            <summary>
+            Returns a number indicating the sign of a Fix64 number.
+            Returns 1 if the value is positive, 0 if is 0, and -1 if it is negative.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Abs(FixMath.NET.Fix64)">
+            <summary>
+            Returns the absolute value of a Fix64 number.
+            Note: Abs(Fix64.MinValue) == Fix64.MaxValue.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.FastAbs(FixMath.NET.Fix64)">
+            <summary>
+            Returns the absolute value of a Fix64 number.
+            FastAbs(Fix64.MinValue) is undefined.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Floor(FixMath.NET.Fix64)">
+            <summary>
+            Returns the largest integer less than or equal to the specified number.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Ceiling(FixMath.NET.Fix64)">
+            <summary>
+            Returns the smallest integral value that is greater than or equal to the specified number.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Round(FixMath.NET.Fix64)">
+            <summary>
+            Rounds a value to the nearest integral value.
+            If the value is halfway between an even and an uneven value, returns the even value.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.op_Addition(FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            <summary>
+            Adds x and y. Performs saturating addition, i.e. in case of overflow, 
+            rounds to MinValue or MaxValue depending on sign of operands.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.FastAdd(FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            <summary>
+            Adds x and y witout performing overflow checking. Should be inlined by the CLR.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.op_Subtraction(FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            <summary>
+            Subtracts y from x. Performs saturating substraction, i.e. in case of overflow, 
+            rounds to MinValue or MaxValue depending on sign of operands.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.FastSub(FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            <summary>
+            Subtracts y from x witout performing overflow checking. Should be inlined by the CLR.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.FastMul(FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            <summary>
+            Performs multiplication without checking for overflow.
+            Useful for performance-critical code where the values are guaranteed not to cause overflow
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.FastMod(FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            <summary>
+            Performs modulo as fast as possible; throws if x == MinValue and y == -1.
+            Use the operator (%) for a more reliable but slower modulo.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Pow2(FixMath.NET.Fix64)">
+            <summary>
+            Returns 2 raised to the specified power.
+            Provides at least 6 decimals of accuracy.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Log2(FixMath.NET.Fix64)">
+            <summary>
+            Returns the base-2 logarithm of a specified number.
+            Provides at least 9 decimals of accuracy.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            The argument was non-positive
+            </exception>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Ln(FixMath.NET.Fix64)">
+            <summary>
+            Returns the natural logarithm of a specified number.
+            Provides at least 7 decimals of accuracy.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            The argument was non-positive
+            </exception>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Pow(FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            <summary>
+            Returns a specified number raised to the specified power.
+            Provides about 5 digits of accuracy for the result.
+            </summary>
+            <exception cref="T:System.DivideByZeroException">
+            The base was zero, with a negative exponent
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            The base was negative, with a non-zero exponent
+            </exception>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Sqrt(FixMath.NET.Fix64)">
+            <summary>
+            Returns the square root of a specified number.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            The argument was negative.
+            </exception>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Sin(FixMath.NET.Fix64)">
+            <summary>
+            Returns the Sine of x.
+            The relative error is less than 1E-10 for x in [-2PI, 2PI], and less than 1E-7 in the worst case.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.FastSin(FixMath.NET.Fix64)">
+            <summary>
+            Returns a rough approximation of the Sine of x.
+            This is at least 3 times faster than Sin() on x86 and slightly faster than Math.Sin(),
+            however its accuracy is limited to 4-5 decimals, for small enough values of x.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Cos(FixMath.NET.Fix64)">
+            <summary>
+            Returns the cosine of x.
+            The relative error is less than 1E-10 for x in [-2PI, 2PI], and less than 1E-7 in the worst case.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.FastCos(FixMath.NET.Fix64)">
+            <summary>
+            Returns a rough approximation of the cosine of x.
+            See FastSin for more details.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Tan(FixMath.NET.Fix64)">
+            <summary>
+            Returns the tangent of x.
+            </summary>
+            <remarks>
+            This function is not well-tested. It may be wildly inaccurate.
+            </remarks>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Acos(FixMath.NET.Fix64)">
+            <summary>
+            Returns the arccos of of the specified number, calculated using Atan and Sqrt
+            This function has at least 7 decimals of accuracy.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Atan(FixMath.NET.Fix64)">
+            <summary>
+            Returns the arctan of of the specified number, calculated using Euler series
+            This function has at least 7 decimals of accuracy.
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.Clamp(FixMath.NET.Fix64,FixMath.NET.Fix64,FixMath.NET.Fix64)">
+            
+            Custom Functions
+            
+        </member>
+        <member name="P:FixMath.NET.Fix64.RawValue">
+            <summary>
+            The underlying integer representation
+            </summary>
+        </member>
+        <member name="M:FixMath.NET.Fix64.#ctor(System.Int64)">
+            <summary>
+            This is the constructor from raw value; it can only be used interally.
+            </summary>
+            <param name="rawValue"></param>
+        </member>
+        <member name="M:FixMath.NET.FixVector3.Rotate(FixMath.NET.FixVector3,FixMath.NET.FixVector3)">
+            <summary>
+            Rotates a vector using a ZXY Euler angles
+            </summary>
+            <param name="v">The vector to be rotated.</param>
+            <param name="angle">The rotation vector.</param>
+            <returns>The rotated vector</returns>
+        </member>
+        <member name="M:FixMath.NET.FixVector3.RodriguezRotate(FixMath.NET.FixVector3,FixMath.NET.FixVector3,FixMath.NET.Fix64)">
+            <summary>
+            Rotates a vector using the Rodriguez rotation formula
+            about an arbitrary axis.
+            </summary>
+            <param name="v">The vector to be rotated.</param>
+            <param name="axis">The rotation axis.</param>
+            <param name="angle">The rotation angle.</param>
+            <returns>The rotated vector</returns>
+        </member>
+        <member name="M:FixMath.NET.FixVector3.Pitch(FixMath.NET.FixVector3,FixMath.NET.Fix64)">
+             <summary>
+            Rotates the vector on the X axis
+             </summary>
+        </member>
+        <member name="M:FixMath.NET.FixVector3.Yaw(FixMath.NET.FixVector3,FixMath.NET.Fix64)">
+             <summary>
+            Rotates the vector on the Y axis
+             </summary>
+        </member>
+        <member name="M:FixMath.NET.FixVector3.Roll(FixMath.NET.FixVector3,FixMath.NET.Fix64)">
+             <summary>
+            Rotates the vector on the Z axis
+             </summary>
+        </member>
+    </members>
+</doc>
