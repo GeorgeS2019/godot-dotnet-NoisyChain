@@ -23,10 +23,6 @@ jobs:
             rid: win-x64
             cibuild-script: ./eng/common/CIBuild.cmd -warnAsError 0
 
-          - name: 🍎 macOS (x64)
-            os: macos-latest
-            rid: osx-arm64
-            cibuild-script: ./eng/common/cibuild.sh --warnaserror false
 
     steps:
       - name: Checkout
