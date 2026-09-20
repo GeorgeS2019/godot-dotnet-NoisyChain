@@ -34,5 +34,5 @@ jobs:
       - name: Publish NuGet packages
         run: |
           for pkg in artifacts/packages/Release/Shipping/*; do
-            dotnet nuget push $pkg -s "godot-nightly" --api-key "az" --skip-duplicate
+            dotnet nuget push $pkg -s "godot-nightly" --skip-duplicate
           done
